@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaning Angular Module </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script type="text/javascript">
+        angular.module('sampleApp', []);
+    </script>
+    <style>
+        .para {
+            font-size: 16px;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+
+        }   
+    </style>
+</head>
+<body ng-app="sampleApp">
+    <h1>Learning AngularJS Module</h1>
+    <p>This is a simple example of an AngularJS module.</p>
+    <p>AngularJS modules are containers for different parts of an application, such as controllers, services, directives, etc. They help in organizing the code and managing dependencies.</p>
+    <p>In this example, we have created a module named <strong>sampleApp</strong> using the <code>angular.module</code> method. This module can be used to define controllers, services, and other components that are part of the application.</p>
+    <p>To use this module in your application, you can include it as a dependency in other modules or use it to define components that belong to this module.</p>
+    <p>For more information on AngularJS modules, you can refer to the official documentation: <a href="https://docs.angularjs.org/guide/module">AngularJS Modules Guide</a>.</p>   
+    <p class="para">Sum of Two numbers. (45+5) = {{45+5}} </p>
+    
+</body>
+</html>

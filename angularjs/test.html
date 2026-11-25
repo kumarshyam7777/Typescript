@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJS Styled Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+    <section class="app-container">
+        <h1 class="app-title">{{ message }}</h1>
+        <h2 class="app-subtitle">{{ name }}</h2>
+        <p class="app-text">Welcome to your interactive AngularJS course page. Here is a quick calculated result from the controller:</p>
+        <p class="app-info">Sum of <strong> {{ num1 }} </strong> and <strong> {{ num2 }} </strong> is: <strong>{{ calculateSum(num1, num2) }}</strong></p>
+    </section>
+
+
+    <script>
+        let app = angular.module('myApp', []);
+        app.controller('myCtrl', ($scope)=> {
+            $scope.message = "Welcome to AngularJs Course";
+            $scope.name = "Shyam Sundar Das";
+            $scope.num1 = 10;
+            $scope.num2 = 20;
+            $scope.calculateSum = (num1, num2) =>  num1 + num2;
+        });
+    </script>
+
+</body>
+</html>
